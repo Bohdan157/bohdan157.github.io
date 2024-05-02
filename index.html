@@ -1,30 +1,60 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-	<meta charset= "UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-	<title>
-		Home
-	</title>
-</head>
-<body style="background-color:black; color:#FFFFFF;">
-    <div>
-	<h1 style="text-align: center;">Hi, I am Bohdan</h1>
-    <hr>
-    <h2>11 y.o from Ukraine</h2>
-    <hr>
-    <h2>U can talk with me here:
-    <br>Discord: @Bohdan157
-    <br>Telegram: @Bohdan718</h2>
-    <hr>
-    <h2>My devices:
-    <br>Samsung Galaxy S21FE (main, Android 13, One ui 5.1)
-    <br>Samsung Galaxy A30s (second, Android 11 MiUi 13)
-    <br>iPhone 6S (iOS 15.8)
-    <br>iPhone SE 2020 (iOS 17.2 Beta 1)
-    <br>Lenovo ThinkPad T470 (20HD, macOS Sonoma 14.2.1, (SMBIOS:MacBookPro 16,3)).</h2>
-    <hr>
-    </div>
-</body>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+    <title>About Bohdan</title>
+
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./lib/vue.min.js"></script>
+
+    <script src="./lib/dialog-polyfill.js"></script>
+    <script src="./lib/highlight.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41640153-4"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-41640153-4");</script>
+    <script>
+      if (window.navigator.userAgent.toLocaleLowerCase().indexOf('trident') !== -1) {
+        window.alert('IE is not supported on this page.')
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div id="nescss">
+      <header :class="{ sticky: scrollPos > 50 }">
+        <div class="container">
+          <div class="nav-brand">
+              <h1>About Bohdan</h1>
+            </a>
+            <p>Hi xd, glad u here).</p>
+          </div>
+      </header>
+
+      <div class="container">
+        <main class="main-content">
+
+          <section class="topic">
+            <h2 id="about">About me</h2>
+            <p>I am 12 year old ukrainian boy</p>
+          </section>
+
+          <section class="topic">
+            <h2 id="My devices"></a>My devices</h2>
+            <p>My main phone is Galaxy S21FE (6/128, OneUi 6.1 S23FE port)</p>
+            <p>My second phone is Galaxy A30s (3/32, OneUi 3.1 Stock)</p>
+            <p>My watch is Galaxy Watch 4 (40mm)</p>
+            <p>My earbuds is Galaxy Buds FE</p>
+            <p>My laptop is Gateway GGNC51518 (i5 11400H, RTX3050, 15 inch, 512gb Samsung SSD, 16GB Samsung RAM, Win11)
+          </section>
+
+          <section class="topic">
+            <h2 id="Communication"></a>U can talk with me in</h2>
+            <p>Telegram: @bohdanr9q2</p>
+            <p>Discord: @Bohdan157</p>
+
 </html>
