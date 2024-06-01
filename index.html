@@ -1,60 +1,41 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bohdans website</title>
+    <link rel="stylesheet" href="Oneui-Web/oui-css/oui.css" 
+    @import "oui-css/themes/oui-light-theme.css" screen;
 
-    <title>About Bohdan</title>
-
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-    <link href="./style.css" rel="stylesheet" />
-    <script src="./lib/vue.min.js"></script>
-
-    <script src="./lib/dialog-polyfill.js"></script>
-    <script src="./lib/highlight.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41640153-4"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-41640153-4");</script>
-    <script>
-      if (window.navigator.userAgent.toLocaleLowerCase().indexOf('trident') !== -1) {
-        window.alert('IE is not supported on this page.')
-      }
-
-    </script>
+    @import "oui-css/themes/oui-dark-theme.css screen" and (prefers-color-scheme: dark); /*Auto load dark theme*/>
   </head>
-
   <body>
-    <div id="nescss">
-      <header :class="{ sticky: scrollPos > 50 }">
-        <div class="container">
-          <div class="nav-brand">
-              <h1>About Bohdan</h1>
-            </a>
-            <p>Hi xd, glad u here).</p>
-          </div>
-      </header>
-
-      <div class="container">
-        <main class="main-content">
-
-          <section class="topic">
-            <h2 id="about">About me</h2>
-            <p>I am 12 year old ukrainian boy</p>
-          </section>
-
-          <section class="topic">
-            <h2 id="My devices"></a>My devices</h2>
-            <p>My main phone is Galaxy S21FE (6/128, OneUi 6.1 Stock mod)</p>
-            <p>My second phone is Galaxy A30s (3/32, OneUi 3.1 Stock)</p>
-            <p>My watch is Galaxy Watch 4 (40mm, WearOS 4.0, Android 13, OneUI 5.0)</p>
-            <p>My earbuds is Galaxy Buds FE</p>
-            <p>My laptop is Gateway GGNC51518 (i5 11400H, RTX3050, 15 inch, 512gb Samsung SSD, 16GB Samsung RAM, Win11)
-          </section>
-
-          <section class="topic">
-            <h2 id="Communication"></a>U can talk with me in</h2>
-            <p>Telegram: @bohdanr9q</p>
-            <p>Discord: @Bohdan157</p>
-
+    <main class="container">
+      <div class="oui-viewing">
+          <!-- Viewing area -->
+          <h1>Hi, welcome here!</h1>
+	<h3>This is mainpage!</h3>
+      </div>
+      <div class="oui-interaction">
+        <div class="oui-bubble">
+	<a href="abtme.html" class="oui-button">abt me</a>
+	<a href="devices.html" class="oui-button">devices</a>
+	<a href="frnds.html" class="oui-button">frnds</a>
+	<a href="links.html" class="oui-button">links</a>
+	</div>
+<div class="oui-bubble">
+    <img alt="hamster" src="hamster.jpg"
+        class="oui-image-cover"
+        alt="hamster"/>
+    <p class="oui-image-cover-caption">Here a cute hamsters for u</p>
+</div>
+<div class="oui-bubble">
+    <img alt="cat" src="cat.jpg"
+        class="oui-image-cover"
+        alt="cat"/>
+    <p class="oui-image-cover-caption">same for cat)</p>
+</div>
+	</div>
+    </main>
+  </body>
 </html>
