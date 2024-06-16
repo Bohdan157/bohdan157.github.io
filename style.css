@@ -324,6 +324,12 @@ h2 {
   background-color: var(--primary);
   border: 0.1em solid var(--secondary);
   font-family: "Inconsolata", Menlo, Chicago, Geneva;
+  display: flex;
+position: fixed;
+top: 47%;
+left: 48%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
 }
 .window-pane {
   overflow-y: scroll;
