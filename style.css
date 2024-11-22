@@ -6,6 +6,26 @@
 :root {
   --box-shadow: 2px 2px;
 
+  /* От ландшафтного экрана телефона до потретного планшета */
+  @media (max-width: 767px) {
+
+  }
+
+  /* От портретного планшета до ландшафтного экрана и настольных дисплеев */
+  @media (min-width: 768px) and (max-width: 979px) {
+
+  }
+
+  /* Большой дисплей */
+  @media (min-width: 1200px) {
+
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+
   /* Spacing */
   --element-spacing: 8px;
   --grouped-element-spacing: 6px;
@@ -561,6 +581,14 @@ input[type="checkbox"]:checked + label::after {
   background-repeat: no-repeat;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
 
 input[type="checkbox"][disabled] + label::before {
   background: var(--surface);
@@ -636,6 +664,7 @@ ul[role="menu-bar"] {
 }
 ul[role="menu-bar"] > [role="menu-item"] {
   position: relative;
+  text-align: center;
   padding: 6px 10px;
 }
 ul[role="menu-bar"] > [role="menu-item"]:focus, ul[role="menu-bar"] > [role="menu-item"]:focus-within, ul[role="menu-bar"] > [role="menu-item"]:hover {
@@ -646,6 +675,7 @@ ul[role="menu-bar"] > [role="menu-item"]:focus, ul[role="menu-bar"] > [role="men
 ul[role="menu-bar"] > [role="menu-item"][aria-haspopup="false"] * {
   color: inherit;
   background: inherit;
+  text-align: center;
   text-decoration: none;
 }
 ul[role="menu"] {
